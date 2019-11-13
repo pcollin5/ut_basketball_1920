@@ -50,3 +50,43 @@ ut_unca_assist_UNCA <- assist_net(team = "UNC Asheville", node_col = "Black", se
 ut_unca_heat_map <- game_shot_chart(game_id = ut_unca_game_id, heatmap = TRUE)
 
 ut_unca_shot_chart <- game_shot_chart(game_id = ut_unca_game_id, heatmap = FALSE)
+
+
+###murray state###
+
+ut_ms_game_id<- ut_game_ids[2]
+
+ut_ms_game_id
+
+ut_color <- ut_color_primary$primary_color
+  
+  ##wp chart##
+
+    ut_ms_wp <- wp_chart(ut_ms_game_id, ut_color_primary$primary_color, murray_state_color, show_legend = T)
+  
+  ##game flow##
+    
+    ut_ms_gf <- game_flow(ut_ms_game_id, ut_color, murray_state_color)
+    
+    ut_ms_gf    
+  
+  ##assist net ut##
+    
+    ut_ms_ass_net <- assist_net(team = "Tennessee", node_col = ut_color, season = ut_ms_game_id)
+  
+    ut_ms_ass_net
+    
+  ##assist net ms##
+    
+    ms_ass_net <- assist_net(team = "Murray State", node_col = murray_state_color, season = ut_ms_game_id)
+    
+  ##shot maps##
+    
+    ut_ms_heat_map <- game_shot_chart(ut_ms_game_id, heatmap = T)
+
+    get_shot_locs(ut_ms_game_id)    
+
+    ##no shot location available for this game###
+    
+###washington###
+    

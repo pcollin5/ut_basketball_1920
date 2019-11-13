@@ -8,3 +8,4 @@ ut_season_to_date11062019 <- assist_net(team = "Tennessee", node_col = ut_color_
 
 
 ##next up is murray sate, they play saturday###
+
