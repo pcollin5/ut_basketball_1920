@@ -90,3 +90,107 @@ ut_color <- ut_color_primary$primary_color
     
 ###washington###
     
+    washington_col <- ncaa_colors %>%
+      filter(ncaa_name == "Washington") %>% 
+      select(primary_color)
+    
+    washington_color <- washington_col$primary_color      
+
+    washington_color
+    
+    washington_game_ids <- get_game_ids("Washington")
+    
+    washington_season_ass_net <- assist_net(team = "Washington", node_col = washington_color, season = "2019-20")
+    
+    ?game_shot_chart
+    get_shot_locs(washington_game_ids[1])
+    
+    washington_baylor_heat_map <- game_shot_chart(washington_game_ids[1], heatmap = T)
+    
+    washington_baylor_heat_map  
+        
+        ###this data is wonky###
+    
+    
+    game_shot_chart(washington_game_ids[2], heatmap = T)
+
+    
+    ut_wash_id <- ut_game_ids[3]
+    
+    ut_wash_id
+    
+    us_wash_wp <- wp_chart(ut_wash_id, ut_color, washington_color, show_legend = TRUE)
+    
+    ut_wash_gf <- game_flow(ut_wash_id, ut_color, washington_color)
+    
+    ut_wash_gf
+    
+    ut_wash_ass_net_UT <- assist_net(team = "Tennessee", node_col = ut_color, season = ut_wash_id)
+    
+    ut_wash_ass_net_WASH <- assist_net(team = "Washington", node_col = washington_color, season = ut_wash_id)
+    
+    ut_wash_heat_map <- game_shot_chart(ut_wash_id, heatmap = TRUE)
+    
+    get_shot_locs(ut_wash_id)
+    ###no shot location data
+    
+    
+    
+    ###next is alabama state 11/20/2019
+        
+        ##opponent ids
+    
+          bamast_id <- get_game_ids(team = "Alabama State")
+        
+        ##opponent color
+          
+          bamast_color <- "Gold"
+        
+        ##opponent season ass net
+        
+          bamast_ass_net_season <- assist_net(team = "Alabama State", node_col = bamast_color, season = "2019-20")
+            #TRY LATER ESPN IS STILL UPDATING
+          
+        ##opponent ass net previous game
+          
+          bamast_previous_game <- assist_net(team = "Alabama State", node_col = bamast_color, season = bamast_id[3])
+          
+        ##opponent heat map previous game
+          
+          ##nope
+          
+        ##win prob
+        ##game flow
+        ##ut ass net
+        ##opponent ass net
+        ##heat map
+        ##update ut season ass net
+    
+    
+    
+    ###next game:
+        ##opponent ids
+        ##opponent color
+        ##opponent season ass net
+        ##opponent ass net previous game
+        ##opponent heat map previous game
+        ##win prob
+        ##game flow
+        ##ut ass net
+        ##opponent ass net
+        ##heat map
+        ##update ut season ass net
+        
+   
+    ###next game:
+        ##opponent ids
+        ##opponent color
+        ##opponent season ass net
+        ##opponent ass net previous game
+        ##opponent heat map previous game
+        ##win prob
+        ##game flow
+        ##ut ass net
+        ##opponent ass net
+        ##heat map
+        ##update ut season ass net
