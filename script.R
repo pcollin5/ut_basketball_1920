@@ -188,8 +188,10 @@ ut_color <- ut_color_primary$primary_color
     
     
     
-    ###next game:
+    ###next game: CHATTANOOGA AT HOME
+          
         ##opponent ids
+          
         ##opponent color
         ##opponent season ass net
         ##opponent ass net previous game
