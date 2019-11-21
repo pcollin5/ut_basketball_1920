@@ -160,10 +160,30 @@ ut_color <- ut_color_primary$primary_color
           ##nope
           
         ##win prob
+          
+          ut_bamast_id <- ut_game_ids[4]
+          
+          ut_bamast_wp <- wp_chart(ut_bamast_id, home_col = ut_color, away_col = bamast_color)
+          
         ##game flow
+          
+          ut_bamast_gf <- game_flow(ut_bamast_id, home_col = ut_color, away_col = bamast_color)
+          
+          ut_bamast_gf
+          
         ##ut ass net
+          
+          ut_bamast_assnet_ut <- assist_net(team = "Tennessee", season = ut_bamast_id, node_col = ut_color)
+        
         ##opponent ass net
+          
+          ut_bamast_assnet_bamast <- assist_net(team = "Alabama State", season = ut_bamast_id, node_col = bamast_color)
+          
         ##heat map
+          
+          get_shot_locs(ut_bamast_id)
+          ###no shot location available
+          
         ##update ut season ass net
     
     

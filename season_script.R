@@ -13,3 +13,4 @@ ut_season_to_date11132019 <- assist_net(team = "Tennessee", node_col = ut_color_
 
 ut_season_to_date11182019 <- assist_net(team = "Tennessee", node_col = ut_color_primary$primary_color, season = "2019-20")
 
+ut_season_to_date11212019 <- assist_net(team = "Tennessee", node_col = ut_color_primary$primary_color, season = "2019-20")
