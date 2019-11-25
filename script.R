@@ -192,11 +192,34 @@ ut_color <- ut_color_primary$primary_color
           
         ##opponent ids
           
+          chattanooga_ids <- get_game_ids("Chattanooga")
+          
         ##opponent color
+          
+          #color not in df
+          
+          utc_color <- "Gold"
+          
         ##opponent season ass net
+          
+          utc_season_assnet <- assist_net(team = "Chattanooga", season = "2019-20", node_col = "Gold")
+          
         ##opponent ass net previous game
+          
+          utc_fsu_id <- chattanooga_ids[5]
+          
+          utc_fsu_assnet_utc <- assist_net(team = "Chattanooga", season = utc_fsu_id, node_col = utc_color)
+          
         ##opponent heat map previous game
+          
+          utc_fsu_heat_map <- game_shot_chart(utc_fsu_id)
+          
+          ##no shot location 
+        
         ##win prob
+          
+          ut_utc_id <- ut_game_ids[5]
+          
         ##game flow
         ##ut ass net
         ##opponent ass net
