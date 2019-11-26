@@ -220,13 +220,49 @@ ut_color <- ut_color_primary$primary_color
           
           ut_utc_id <- ut_game_ids[5]
           
+          ut_utc_wp <- wp_chart(ut_utc_id, home_col = ut_color, away_col = utc_color)
+          
         ##game flow
+          
+          ut_utc_gf <- game_flow(ut_utc_id, home_col = ut_color, away_col = utc_color )
+          
+          ut_utc_gf
+          
         ##ut ass net
+          
+          ut_utc_assnet_ut <- assist_net(team = "Tennessee", season = ut_utc_id, node_col = ut_color)
+          
         ##opponent ass net
+          
+          ut_utc_assnet_utc <- assist_net(team = "Chattanooga", season = ut_utc_id, node_col = utc_color)
+          
         ##heat map
+          
+          ut_utc_heat_map <- game_shot_chart(ut_utc_id, heatmap = TRUE)
+          
+          ut_utc_heat_map
+          
+          ut_utc_shot_loc <- game_shot_chart(ut_utc_id, heatmap = FALSE)
+        
+          ut_utc_shot_loc  
+          
+        ##try something
+          
+          ut_utc_shot_locations <- get_shot_locs(ut_utc_id)
+        
         ##update ut season ass net
         
-   
+          lt_plot <-ut_utc_shot_locations %>%
+            filter(shooter == "Lamonte Turner")
+          
+          P_half_180 + geom_point(data = lt_plot,  aes(x = x, y = y, col = outcome))
+          
+          lt_plot
+          
+          head(ut_utc_shot_locations)
+          
+          ?game_shot_chart
+          
     ###next game:
         ##opponent ids
         ##opponent color
