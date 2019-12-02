@@ -263,15 +263,124 @@ ut_color <- ut_color_primary$primary_color
           
           ?game_shot_chart
           
-    ###next game:
+    ###next game: fsu
         ##opponent ids
-        ##opponent color
+          fsu_ids <- get_game_ids("Florida State")
+        
+          ##opponent color
+          
+          fsu_color <- ncaa_colors %>%
+            filter(espn_name == "Florida State")%>%
+            select(primary_color)
+          
+          fsu_primary_color <- fsu_color$primary_color
+          
         ##opponent season ass net
+          
+          fsu_season_assnet <- assist_net(team = "Florida State", season = "2019-20", node_col = fsu_primary_color)
+          
         ##opponent ass net previous game
+          
+          fsu_chicago_state <- assist_net(team = "Florida State", season = fsu_ids[6], node_col = fsu_primary_color)
+          
         ##opponent heat map previous game
+          
+          ut_fsu_id <- ut_game_ids[6]
+          
         ##win prob
+          
+          ut_fsu_id <- ut_game_ids[6]
+          
+          ut_fsu_wp <- wp_chart(ut_fsu_id, home_col = ut_color, away_col = fsu_primary_color)
+          
         ##game flow
+          
+          ut_fsu_gf <- game_flow(ut_fsu_id, home_col = ut_color, away_col = fsu_primary_color)
+          
+          ut_fsu_gf
+          
         ##ut ass net
+          
+          ut_fsu_utassnet <- assist_net(team = "Tennessee", season = ut_fsu_id, node_col = ut_color)
+          
         ##opponent ass net
+          
+          ut_fsu_fsu_assnet <- assist_net(team = "Florida State", season = ut_fsu_id, node_col = fsu_primary_color)
+          
         ##heat map
+          
+          ut_fsu_heat_map <- game_shot_chart(ut_fsu_id, heatmap = TRUE)
+          
+          ut_fsu_shot_chart <- game_shot_chart(ut_fsu_id, heatmap = FALSE)
+          
         ##update ut season ass net
+          
+          
+          
+    ###next game: vcu
+          ##opponent ids
+          
+            vcu_ids <- get_game_ids(team = "VCU")
+          
+          ##opponent color
+            
+            vcu_color <- ncaa_colors %>%
+              filter(espn_name == "VCU") %>%
+              select(primary_color)
+            
+            vcu_primary_color <- vcu_color$primary_color
+            
+          ##opponent season ass net
+            
+            vcu_assnet <- assist_net(team = "VCU", season = "2019-20", node_col = vcu_primary_color)
+            
+          ##opponent ass net previous game
+            
+            vcu_purdue <- assist_net(team = "VCU", season = vcu_ids[6], node_col = vcu_primary_color)
+            
+          ##opponent heat map previous game
+            
+            vcu_purdue_heat <- game_shot_chart(vcu_ids[6])
+            ##no data
+            
+          ##win prob
+            
+            ut_vcu_id <- ut_game_ids[7]
+            
+            ut_vcu_wp <- wp_chart(ut_vcu_id, home_col = vcu_primary_color,  away_col = ut_color)
+            
+          ##game flow
+            
+            ut_vcu_gf <- game_flow(ut_vcu_id, home_col = vcu_primary_color, away_col = ut_color)
+            
+            ut_vcu_gf
+            
+          ##ut ass net
+            
+            ut_vcu_utassnet <- assist_net(team = "Tennessee", season = ut_vcu_id, node_col = ut_color)
+            
+          ##opponent ass net
+            
+            ut_vcu_vcuassnet <- assist_net(team = "VCU", season = ut_vcu_id, node_col = vcu_primary_color)
+            
+          ##heat map
+            
+            ut_vcu_heatmap <- game_shot_chart(ut_vcu_id, heatmap = TRUE)
+            ##no shot 
+            
+          ##update ut season ass net      
+          
+            
+            
+    ###next game:
+          ##opponent ids
+          ##opponent color
+          ##opponent season ass net
+          ##opponent ass net previous game
+          ##opponent heat map previous game
+          ##win prob
+          ##game flow
+          ##ut ass net
+          ##opponent ass net
+          ##heat map
+          ##update ut season ass net
