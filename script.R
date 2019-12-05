@@ -373,14 +373,389 @@ ut_color <- ut_color_primary$primary_color
             
             
     ###next game:
+            ut_fam_id <- ut_game_ids[8]
           ##opponent ids
+            
+            fam_ids <- get_game_ids("Florida A&M")
+            
           ##opponent color
+            
+            fam_color <- "Green"
+            
           ##opponent season ass net
+            
+            fam_ass_net <- assist_net(team = "Florida A&M", season = "2019-20", node_col = fam_color)
+            
           ##opponent ass net previous game
+            
+            #skip 
+            
           ##opponent heat map previous game
+            
+            #skip
+            
           ##win prob
+            
+            ut_fam_wp <- wp_chart(ut_fam_id, home_col = ut_color, away_col = fam_color)
+            
           ##game flow
+            
+            ut_fam_gf <- game_flow(ut_fam_id, home_col = ut_color, away_col = fam_color)
+            
+            ut_fam_gf
+            
+            
           ##ut ass net
+            
+            ut_fam_assnet_ut <- assist_net(team = "Tennessee", season = ut_fam_id, node_col = ut_color)
+            
           ##opponent ass net
+            
+            ut_fam_assnet_fam <- assist_net(team = "Florida A&M", season = ut_fam_id, node_col = fam_color)
+            
           ##heat map
-          ##update ut season ass net
+            
+            get_shot_locs(ut_fam_id)
+            
+            ut_fam_heat_map <- game_shot_chart(ut_fam_id, heatmap = TRUE)
+            
+            ut_fam_heat_map
+            
+            ut_fam_shot_chart <- game_shot_chart(ut_fam_id, heatmap = FALSE)
+            
+            ut_fam_shot_chart
+            
+            ?game_shot_chart
+            
+            ##update ut season ass net
+            
+            
+            
+            ###next game:
+            ut_mem_id <- ut_game_ids[9]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            
+            ###next game:
+            ut_uc_id <- ut_game_ids[10]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            
+            ###next game:
+            ut_jsu_id <- ut_game_ids[11]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            
+            ###next game:
+            ut_wisc_id <- ut_game_ids[12]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            
+            ###next game:
+            ut_lsu_id <- ut_game_ids[13]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            
+            ###next game:
+            ut_miz_id <- ut_game_ids[14]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            
+            ###next game:
+            ut_sc_id <- ut_game_ids[15]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            
+            ###next game:
+            ut_uga_id <- ut_game_ids[16]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            ###next game:
+            ut_vandy_id <- ut_game_ids[17]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            ###next game:
+            ut_miss_id <- ut_game_ids[18]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            ###next game:
+            ut_kan_id <- ut_game_ids[19]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+
+            ###next game:
+            ut_tam_id <- ut_game_ids[20]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            ###next game:
+            ut_msst_id <- ut_game_ids[21]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            ###next game:
+            ut_bama_id <- ut_game_ids[22]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            ###next game:
+            ut_uk_id <- ut_game_ids[23]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            ###next game:
+            ut_ark_id <- ut_game_ids[24]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            ###next game:
+            ut_sc_id <- ut_game_ids[25]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            ###next game:
+            ut_vandy_id2 <- ut_game_ids[26]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            ###next game:
+            ut_aub_id <- ut_game_ids[27]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            ###next game:
+            ut_ark_id2 <- ut_game_ids[28]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            ###next game:
+            ut_fl_id2 <- ut_game_ids[29]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            ###next game:
+            ut_uk_id2 <- ut_game_ids[30]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
+            
+            ###next game:
+            ut_aub_id2 <- ut_game_ids[31]
+            ##opponent ids
+            ##opponent color
+            ##opponent season ass net
+            ##opponent ass net previous game
+            ##opponent heat map previous game
+            ##win prob
+            ##game flow
+            ##ut ass net
+            ##opponent ass net
+            ##heat map
+            ##update ut season ass net
